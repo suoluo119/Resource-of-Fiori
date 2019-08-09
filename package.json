@@ -1,1 +1,32 @@
+npm ってなに?
+npm とは Node Package Manager の略で Node で 
+作られたパッケージモジュールを管理するためのツールです.
 
+npm は package.json という名前のファイルを作り, 
+連携することでプロジェクト管理や, 環境のセットアップを簡単に行うことができます.
+
+Our initial prototype used grunt and bower to load the UI5 dependencies. 
+Recently, we have switched all UI5Lab repositories to npm modules and the new UI5 tooling. 
+
+grunt
+bower
+npm
+
+bower 和 npm 的区别：
+npm 是伴随Node.js 出现的一个包管理器，最开始只能支持 Node.js 的模块管理，但是后来， npm官网经过一次改版，打出的口号是javascript 的包管理器，所以，其已经不在局限于是Node.js 的模块管理了，已经通用到了所有 js 的包管理工具了，可以说，前后通吃了。
+bower 的话，从一开始，就是专门为前端表现设计的包管理器，一切全部为前端考虑的。npm 和bower 的最大区别，就是 npm 支持嵌套地依赖管理，而 bower只能支持扁平的依赖（嵌套的依赖，由程序员自己解决）。
+现在不建议使用bower了。官方已经停止维护，建议直接使用npm就可以了。
+
+
+package.jsonのdependenciesとdevDependencies
+
+開発者がpackage.jsonがあるディレクトリでnpm installを行うと、
+dependenciesに書かれているパッケージもdevDependenciesに書かれているパッケージもすべてnode_modules内にインストールされます。
+
+ですが、こちらをパッケージとして公開し、開発者以外の人がnpm install sampleとしたときには、
+dependenciesに書かれているパッケージがnode_modules内にインストールされ、devDependenciesに書かれているパッケージはインストールされません。
+
+devDependenciesには、開発に必要なパッケージのみを書きます。
+ですので、パッケージを使いたい人がnpm install パッケージ名としたときにはdependenciesに書かれているパッケージのみがインストールされます。
+一方で、開発者がこのpackage.jsonがあるディレクトリでnpm installを行うと、dependenciesに書かれているパッケージのみではなく、
+devDependenciesに書かれているパッケージもインストールされます。
