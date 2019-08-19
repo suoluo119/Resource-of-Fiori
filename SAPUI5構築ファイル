@@ -22,12 +22,3 @@ data-sap-ui-libs              ページで使用するUIのライブラリ
 data-sap-ui-compatVersion     "edge"を指定すると、SAPUI5の最新機能が使える（任意指定）
 data-sap-ui-preload           ライブラリを同期で読み込むか(sync)、非同期で読み込むか(async)を指定する。
                               パフォーマンス向上のためasyncを指定することが推奨されている
-
-
-
-Component.jsとmanifest.jsonの役割は？
-
-ファイル                      役割
-index.html                    Bootstrapの定義、コンテンツを配置する場所(body)の定義
-Component.js                  初期処理の定義
-manifest.json                 ライブラリのバージョン、モデルなど、アプリケーションに必要な設定を定義
