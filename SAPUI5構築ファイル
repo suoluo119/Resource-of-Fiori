@@ -85,5 +85,7 @@ the descriptor is loaded and parsed automatically.
 一方、Fiori Launchpadから実行する場合はindex.htmlは使用せずにComponent.jsが直接呼ばれるそうです。
 （つまり、Component.jsが必須ということ）
 
-sap.m.Shell デバイスに合わせて幅を自動調整することができます。
-sap.m.App   画面を遷移することを提供して、アプリのヘッダ情報をセットする
+sap.m.Shell       デバイスに合わせて幅を自動調整することができます。
+sap.m.App(pages)  画面を遷移することを提供して、アプリのヘッダ情報をセットする
+sap.m.SplitApp    Contains two NavContainers. One for the Master Area and another for the Detail Area. 
+                  In addition,it offers you to manage one background across your application.
