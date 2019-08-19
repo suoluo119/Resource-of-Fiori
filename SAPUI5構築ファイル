@@ -3,6 +3,16 @@ Bootstrapとは
 Before we can do something with SAPUI5 , we need to load and initialize it.
 This process of loading and initializing SAPUI5 is called bootstrapping .
 
+
+Bootstrapは一般的には以下のように定義されています。
+電源投入後あるいはリセットの後に、コンピューター上のメモリーに基本的なソフトウェアを読み込むことを指す。
+出典: フリー百科事典『ウィキペディア（Wikipedia）』
+
+SAPUI5では、ページが開かれたとき、最初にSAPUI5のライブラリやテーマなどを読み込むスクリプトのことを指します。
+SAPUI5のアプリケーションとして動かすために必須なのですね。
+（Bootstrapという名前のフレームワークがありますがそれとは別物です）
+
+
 Bootstrapの中身
 項目	                        指定するもの
 id	                          固定値 "sap-ui-bootstrap"
@@ -12,3 +22,4 @@ data-sap-ui-libs	            ページで使用するUIのライブラリ
 data-sap-ui-compatVersion	    "edge"を指定すると、SAPUI5の最新機能が使える（任意指定）
 data-sap-ui-preload	          ライブラリを同期で読み込むか(sync)、非同期で読み込むか(async)を指定する。
                               パフォーマンス向上のためasyncを指定することが推奨されている
+
