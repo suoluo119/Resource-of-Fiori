@@ -18,8 +18,8 @@ Bootstrapの中身
 id                            固定値 "sap-ui-bootstrap"
 src                           SAPUI5 coreライブラリが格納されている場所
 data-sap-ui-theme             UIのテーマ
-data-sap-ui-libs	            ページで使用するUIのライブラリ
-data-sap-ui-compatVersion	    "edge"を指定すると、SAPUI5の最新機能が使える（任意指定）
-data-sap-ui-preload	          ライブラリを同期で読み込むか(sync)、非同期で読み込むか(async)を指定する。
+data-sap-ui-libs              ページで使用するUIのライブラリ
+data-sap-ui-compatVersion     "edge"を指定すると、SAPUI5の最新機能が使える（任意指定）
+data-sap-ui-preload           ライブラリを同期で読み込むか(sync)、非同期で読み込むか(async)を指定する。
                               パフォーマンス向上のためasyncを指定することが推奨されている
 
